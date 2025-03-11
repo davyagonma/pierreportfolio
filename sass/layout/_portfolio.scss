@@ -1,0 +1,168 @@
+/////////////////////////////////////////////////////////
+
+// PORTFOLIO
+
+.portfolio-headline {
+  padding: 3rem;
+
+  @include respond(md) {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+}
+
+/////////////////////////////////////////////////////////
+
+// LAVOLIO, LUVELLIC
+
+.lavolio,
+.luvellic {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  @include respond(lg) {
+    justify-content: center;
+  }
+}
+
+.lavolio-text,
+.luvellic-text {
+  height: auto;
+  background-color: #e8ffff;
+  position: relative;
+  padding: 5rem 5rem 5rem 14rem;
+  width: 70%;
+
+  h1 {
+    @include respond(md) {
+      font-size: 1.7rem;
+    }
+  }
+
+  p {
+    margin: 3rem 0;
+    @include respond(lg) {
+      color: #222831;
+      font-weight: 300;
+    }
+    @include respond(md) {
+      font-size: 1.1rem;
+      margin: 1.5rem 0;
+    }
+  }
+
+  @include respond(lg) {
+    padding: 3rem;
+    width: 100%;
+  }
+}
+
+.luvellic-text {
+  @include respond(lg) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(240, 254, 255, 0.9),
+        rgba(240, 251, 255, 0.9)
+      ),
+      url(/img/drew-graham-cTKGZJTMJQU-unsplash.jpg);
+    background-size: cover;
+  }
+}
+
+.lavolio-text {
+  @include respond(lg) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(240, 254, 255, 0.9),
+        rgba(240, 251, 255, 0.9)
+      ),
+      url(/img/jasmine-waheed-iyBOx5YvFbs-unsplash.jpg);
+    background-size: cover;
+  }
+}
+
+.lavolio-img,
+.luvellic-img {
+  max-width: 20rem;
+  position: absolute;
+  top: 50%;
+  left: -10rem;
+  transform: translateY(-50%);
+
+  @include respond(lg) {
+    display: none;
+  }
+}
+
+/////////////////////////////////////////////////////////
+
+// PORTFOLIO BUTTON
+
+.btn-portfolio {
+  width: 45%;
+  font-size: 1rem;
+
+  @include respond(lg) {
+    font-weight: 700;
+  }
+
+  @include respond(md) {
+    font-size: 0.9rem;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/////////////////////////////////////////////////////////
+
+// SALT & SUN
+
+.salt-sun-text {
+  width: 50rem;
+  height: auto;
+  background-color: #eeeeee;
+  position: relative;
+  padding: 5rem 14rem 5rem 5rem;
+  width: 70%;
+
+  h1 {
+    @include respond(md) {
+      font-size: 1.7rem;
+    }
+  }
+
+  p {
+    margin: 3rem 0;
+    @include respond(md) {
+      font-size: 1.1rem;
+      margin: 1.5rem 0;
+    }
+  }
+
+  @include respond(lg) {
+    padding: 3rem;
+    width: 100%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(238, 238, 238, 0.9),
+        rgba(238, 238, 238, 0.9)
+      ),
+      url(/img/jernej-graj-L-ROTbBDgTc-unsplash.jpg);
+    background-size: cover;
+  }
+}
+
+.salt-sun-img {
+  max-width: 20rem;
+  position: absolute;
+  top: 50%;
+  right: -10rem;
+  transform: translateY(-50%);
+
+  @include respond(lg) {
+    display: none;
+  }
+}
+
+/////////////////////////////////////////////////////////
